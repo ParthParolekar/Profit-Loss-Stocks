@@ -4,12 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Profit and Loss</title>
   </head>
   <body>
     <main>
-      <div class="container calculation-container"></div>
+      <div class="container calculation-container">
+        <div class="flex-column">
+          <form name="" class="form margin">
+            <label>
+              <h4 class="input-type">Purchase Price</h4>
+              <input
+                class="input"
+                id="purchase-price"
+                type="number"
+                place="Enter Purchase Price"
+                required
+              />
+            </label>
+          </form>
+
+          <form name="" class="form margin">
+            <label>
+              <h4 class="input-type">Quantity</h4>
+              <input
+                class="input"
+                id="quantity"
+                type="number"
+                place="Enter Quantity"
+                required
+              />
+            </label>
+          </form>
+
+          <form name="" class="form margin">
+            <label>
+              <h4 class="input-type">Current Price</h4>
+              <input
+                class="input"
+                id="current-price"
+                type="number"
+                place="Enter Current Price"
+                required
+              />
+            </label>
+          </form>
+
+          <button id="calculate">Calculate</button>
+        </div>
+
+        <div class="result">You made a profit of 1000(60%)</div>
+      </div>
       <div class="container gif-container">
         <!-- <img src="https://i.redd.it/d6wqu7h9yvv21.gif" alt="" /> -->
         <!-- <img
@@ -18,5 +68,7 @@
         /> -->
       </div>
     </main>
+
+    <script src="./app.js"></script>
   </body>
 </html>

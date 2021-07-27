@@ -6,6 +6,7 @@
 body {
   --primary: white;
   --seconday: black;
+  font-family: "Poppins";
 }
 
 main {
@@ -22,9 +23,85 @@ img {
   border-radius: 10px;
 }
 
+.margin {
+  margin: 1rem;
+}
+
+.margin-top-bottom {
+  margin: 1rem 0;
+}
+
+.margin-left-right {
+  margin: 0 1rem;
+}
+
 .container {
   background: var(--seconday);
   border-radius: 10px;
   height: 80vh;
   width: 60vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.calc .flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.input {
+  color: var(--seconday);
+  padding: 5px;
+  font-family: inherit;
+  font-weight: 500;
+  border: none;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-type {
+  color: var(--primary);
+  font-size: 1.3rem;
+  margin-right: 1rem;
+}
+
+#calculate {
+  max-width: 30vh;
+  width: 20vh;
+  padding: 1rem 0.5rem;
+  margin: 1rem auto;
+  font-family: inherit;
+  font-size: 1rem;
+  background: var(--seconday);
+  color: var(--primary);
+  border: 1px solid gray;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s all ease;
+}
+
+#calculate:hover {
+  color: var(--seconday);
+  background: var(--primary);
+  font-size: 1.15rem;
+  transition: 0.25s all ease;
+}
+
+.result {
+  color: white;
+  margin: auto 2rem;
+  text-align: center;
+  font-size: 1.2rem;
 }
