@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  --primary: white;
+  --seconday: black;
+}
+
+main {
+  margin: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img {
+  /* object-fit: cover; */
+  max-width: 60vh;
+  height: 80vh;
+  border-radius: 10px;
+}
+
+.container {
+  background: var(--seconday);
+  border-radius: 10px;
+  height: 80vh;
+  width: 60vh;
+}
