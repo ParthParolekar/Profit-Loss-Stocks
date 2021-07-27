@@ -9,7 +9,12 @@ body {
   font-family: "Poppins";
 }
 
-main {
+.about {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.main {
   margin: 50px;
   display: flex;
   justify-content: space-around;
@@ -19,7 +24,7 @@ main {
 img {
   /* object-fit: cover; */
   max-width: 60vh;
-  height: 80vh;
+  height: 70vh;
   border-radius: 10px;
 }
 
@@ -38,11 +43,15 @@ img {
 .container {
   background: var(--seconday);
   border-radius: 10px;
-  height: 80vh;
+  height: 70vh;
   width: 60vh;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
+}
+
+.gif-container {
+  background: var(--primary);
 }
 
 .calc .flex {

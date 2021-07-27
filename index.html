@@ -13,11 +13,12 @@
     <title>Profit and Loss</title>
   </head>
   <body>
-    <main>
+      <h2 class="about">Check your profit/loss on your stocks. Just enter the required details below</h1>
+    <main class="main">
       <div class="container calculation-container">
         <div class="flex-column">
           <form name="" class="form margin">
-            <label>
+            <label class="margin">
               <h4 class="input-type">Purchase Price</h4>
               <input
                 class="input"
@@ -27,10 +28,8 @@
                 required
               />
             </label>
-          </form>
 
-          <form name="" class="form margin">
-            <label>
+            <label class="margin">
               <h4 class="input-type">Quantity</h4>
               <input
                 class="input"
@@ -40,10 +39,8 @@
                 required
               />
             </label>
-          </form>
 
-          <form name="" class="form margin">
-            <label>
+            <label class="margin">
               <h4 class="input-type">Current Price</h4>
               <input
                 class="input"
@@ -53,19 +50,16 @@
                 required
               />
             </label>
-          </form>
 
-          <button id="calculate">Calculate</button>
+            <button id="calculate" type="submit">Calculate</button>
+          </form>
         </div>
 
-        <div class="result">You made a profit of 1000(60%)</div>
+        <div class="result"></div>
       </div>
       <div class="container gif-container">
         <!-- <img src="https://i.redd.it/d6wqu7h9yvv21.gif" alt="" /> -->
-        <!-- <img
-          src="https://media.tenor.com/images/46db66113e0bf94ff7b93bfda73574e5/tenor.gif"
-          alt=""
-        /> -->
+        <!-- <img src="https://media.tenor.com/images/46db66113e0bf94ff7b93bfda73574e5/tenor.gif" alt="" /> -->
       </div>
     </main>
 
